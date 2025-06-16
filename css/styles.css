@@ -12,6 +12,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.hide {
+  display: none !important;
+}
 .container {
   background-color: #45576f;
   padding: 40px;
@@ -19,7 +22,7 @@ body {
   border-radius: 10px;
 }
 .form-container {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -52,9 +55,14 @@ body {
   cursor: pointer;
   height: 45px;
   width: 140px;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+.buttons-container button:hover {
+  opacity: 1;
 }
 #calc-btn {
-  background-color: #cb1e1e;
+  background-color: #0011ff;
 }
 #clear-btn {
   background-color: #3c3a3a;
@@ -64,4 +72,32 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+}
+.result h1 {
+  margin-bottom: 10px;
+}
+.ranking-container h3 {
+  margin-bottom: 20px;
+}
+.ranks-header {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: small;
+  margin-bottom: 10px;
+}
+.result-container button {
+  height: 45px;
+  width: 100px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #0011ff;
+  margin-top: 20px;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+.result-container button:hover {
+  opacity: 1;
 }
