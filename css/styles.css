@@ -83,9 +83,34 @@ body {
 .ranks-header {
   display: flex;
   justify-content: center;
-  gap: 10px;
   font-size: small;
   margin-bottom: 10px;
+}
+.imc-table {
+  font-size: small;
+}
+.table-data {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #abaaaa;
+}
+.table-data p {
+  width: 33.33%;
+  margin: 0;
+}
+.ranks-header h4:nth-child(2) {
+  margin-left: 50px;
+}
+.ranks-header h4:nth-child(3) {
+  margin-left: 25px;
+}
+.ranks-header h4:nth-child(3),
+.table-data p:nth-child(3) {
+  max-width: 80px;
 }
 .result-container button {
   height: 45px;
@@ -100,4 +125,26 @@ body {
 }
 .result-container button:hover {
   opacity: 1;
+}
+
+.result h1 span {
+  font-size: 50px;
+}
+.result h3 span {
+  font-size: 25px;
+}
+.low {
+  color: #ff6a00;
+}
+.normal {
+  color: #40c104;
+}
+.above {
+  color: #c7d504;
+}
+.high {
+  color: #ff6a00;
+}
+.very-high {
+  color: #f90000;
 }
